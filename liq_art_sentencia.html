@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title> T.T. 6 - Dashboard</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../estilos/misestilos.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
+
+    <!--Estilos propios -- -->
+    <link rel="stylesheet" href="../estilos/liq_art_sentencia.css">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h4>
+                    <!-- <i class="fas fa-cog"></i> -->
+                    Herramientas</h4>
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- <p>Dummy Heading</p> -->
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Principal</a>
+                </li>
+                <li>
+                    <a href="#homeSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"><i
+                            class="fas fa-check-circle"></i> Control</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#"> Despacho</a>
+                        </li>
+                        <li>
+                            <a href="#"> Sentencias</a>
+                        </li>
+                        <li>
+                            <a href="#"> Interlocutorios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- <a href="#"><i class="fas fa-dollar-sign"></i> Liquidaciones</a> -->
+                    <a href="#pageSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"><i
+                            class="fas fa-dollar-sign"></i> Liquidaciones</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#"> Sentencias</a>
+                        </li>
+                        <li>
+                            <a href="#"> Intereses</a>
+                        </li>
+                        <li>
+                            <a href="#"> A.R.T. - Acuerdos</a>
+                        </li>
+                        <li>
+                            <a href="#"> A.R.T. - Sentencias</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-book"></i> Jurisprudencia</a>
+                </li>
+                <li>
+                    <a href="modelos.html" target="_blank"><i class="fas fa-filter"></i> Modelos</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-calendar"></i> Entrada en vigencia</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-file-code"></i> Dev Tools</a>
+                </li>
+            </ul>
+
+            <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul> -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-cog"></i>
+                        <!-- <span> Sidebar</span> -->
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-inbox "></i> Mensajes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-folder-open"></i> Abrir</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">xx</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">xxx</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="d-flex flex-wrap">
+                <div class="d-flex col-12">
+                    <div class="card text-dark bg-light mb-3 w-100">
+                        <div class="card-header"> Datos de la causa: </div>
+                        <div class="card-body border-bottom d-flex col-12 flex-wrap font-weight-bold font">
+                            <div class="d-table col-3">
+                                <div class="p-2 d-table-cell text-center">Número de la causa: <input type="text" id="numeroCausa" ></div>
+                                <div class="p-2 d-table-cell text-center">Nombre actor: <input type="text" id="nombreActor" class="datosCausa"></div>
+                            </div>
+                            <div class="d-flex col-3">
+                                <div class="p-2 d-table-cell text-center">Abogado actor: <input type="text" id="abogadoActor"></div>
+                                <div class="p-2 d-table-cell text-center">Aseguradora: <input type="text" id="demandada"></div>
+                            </div>
+                            <div class="d-flex col-3">
+                                <div class="p-2 d-table-cell text-center">Abogado demandada: <input type="text" id="abogadoDemandada"></div>
+                                <div class="p-2 d-table-cell text-center">Empleador: <input type="text" id="empleador"></div>
+                            </div>
+                            <div class="d-flex col-3">
+                                <div class="p-2 d-table-cell text-center">Contrato de Afiliación: <input type="text" id="contratoAfiliacion"></div>
+                                <div class="p-2 d-table-cell text-center">Juez que integra: <input type="text" id="tercerJuez"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex col-6">
+                    <div class="card text-dark bg-light mb-3 w-100">
+                        <div class="card-header"> Datos del accidente: </div>
+                        <div class="card-body border-bottom" style="height: 100px; display: flex; align-items: center; justify-content: center;
+                        flex-wrap: wrap;">
+                            <div class="col-6 d-flex justify-content-center">
+                                <p>Fecha del accidente: &nbsp; <input type="date" id="fechaAccidente" tabindex="1"></p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-center">
+                                <p>Inicio de la RL: &nbsp; <input type="date" id="fechaInicioRL" tabindex="1"
+                                        title="Por defecto se muestran 365 días antes de la fecha del accidente.">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body border-bottom"
+                            style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                            <div class="col-6 d-flex justify-content-center"><input type="radio" id="edadchk"
+                                    name="edad" checked> Edad: &nbsp;
+                                <input class="w-50 text-center" type="text" id="edad" min="1" max="150"> &nbsp; años
+                            </div>
+                            <div class="col-6 d-flex justify-content-center"><label for="fechachk"><input type="radio"
+                                        id="fechachk" name="edad" onclick="bloquearText()"> Fecha de nacimiento : &nbsp;
+                                </label>
+                                <input type="date" onchange="calculoFecha()" id="fechaNacimiento" disabled></div>
+                        </div>
+                        <div class="card-body border-bottom"
+                            style="height: 100px; display: flex; align-items: center;  justify-content: center;">
+                            <div class="col-3 text-center">
+                                Física : <input type="text" id="incFisica"> %
+                            </div>
+                            <div class="col-3 text-center">
+                                Psicol. : <input type="text" id="incPsicol"> %
+                            </div>
+                            <div class="col-6 text-center">
+                                Incapacidad total (fórmula Balthazard) : <input type="text" id="porcentaje" min="1"
+                                    max="100"> %
+                            </div>
+
+                        </div>
+                        <!-- <div class="card-body border-bottom" style="height: 100px; display: flex; align-items: center;  justify-content: center;">
+                            <input class="flex-row w-25 m-4 " type="text" id="porcentaje" min="1" max="100" style="text-align: center;"> % de incapacidad.
+                        </div> -->
+                    </div>
+                </div>
+                <div class="d-flex col-6">
+                    <div class="card text-dark bg-light mb-3 w-100">
+                        <div class="card-header"> V.I.B.M. :</div>
+                        <div class="card-body border-bottom"
+                            style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                            <div class="col-6 text-center">
+                                <button id="sinRipte_quincenal" class="btn btn-primary mr-2" data-toggle="modal"
+                                    data-target="#modal24557_quincenal" value="Sin RIPTE" disabled>Sin ripte -
+                                    Quincena</button>
+                            </div>
+                            <div class="col-6 text-center">
+                                <button type="button" class="btn btn-success" data-toggle="modal"
+                                    data-target="#modal27348_quincenal" id="conRipte_quincenal" disabled>Con ripte -
+                                    Quincena</button>
+                            </div>
+
+                        </div>
+                        <div class="card-body border-bottom"
+                            style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                            <div class="d-flex col-12" id="botonesIBM">
+                                <div class="col-6 text-center">
+                                    <button id="sinRipte" class="btn btn-primary mr-2" data-toggle="modal"
+                                        data-target="#modal24557" value="Sin RIPTE" disabled>Sin ripte -
+                                        Mensual</button>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <button type="button" class="btn btn-success" data-toggle="modal"
+                                        data-target="#modal27348" id="conRipte" disabled>Con ripte - Mensual</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- backup NO BORRAR -->
+
+                        <!-- <div class="card text-dark bg-light mb-3 w-100">
+                        <div class="card-header"> V.I.B.M. :</div>
+                        <div class="card-body border-bottom" style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                            <div>
+                                <label for="conozco"><input type="checkbox" id="conozco"> Conzoco el IBM: </label>
+                                <input class="ml-3" type="text" id="ibmConocido">
+                            </div>
+
+                        </div>
+
+
+                        <div class="card-body border-bottom" style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                            <div class="d-flex col-12" id="botonesIBM">
+                                <div class="d-flex col-6 justify-content-center align-content-center">
+                                    <label for="quincenal"><input type="checkbox" id="quincenal"> Remuneración quincenal: </label>
+                                </div>
+                                <div class="d-flex col-6 justify-content-center align-content-center">
+                                    <button type="button" id="sinRipte" class="btn btn-primary mr-2" data-toggle="modal"
+                                        data-target="#modal24557" value="Sin RIPTE" disabled>Sin RIPTE </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#modal27348" id="conRipte" disabled> Con RIPTE </button>
+
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <div class="card-body border-bottom"
+                            style="height: 100px; display: flex; align-items: center; justify-content: center;">
+                            <div class="text-center">
+                                V.I.B.M. a utlizar en el cálculo : &nbsp; <input class="text-center" type="text"
+                                    id="vibm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex w-100 col-12 mb-3">
+                <div class="col-6 m-0 p-0 mr-3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="jumboton">Calcular para
+                        Sentencias...</button>
+                </div>
+                <div class="col-6 m-0 p-0">
+                    <button type="button" class="btn btn-success btn-lg btn-block" id="jumboton_acuerdos"
+                        data-toggle="modal" data-target="#modalAcuerdos">Calcular para Acuerdos...</button>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-around">
+                <div class="d-flex col-6">
+                    <div class="card text-dark bg-light mb-3 w-100 mostrarTodo" style="display: none;">
+                        <div class="card-header"> Resumen : </div>
+                        <div class="card-body border-bottom">
+                            <div id="mostrarLeyAplicable" class="alert alert-dark h3 mt-3"
+                                style="color: black; display: none;" role="alert"></div>
+                            <div id="mostrarPisoMinimo" class="alert alert-dark h3 mt-3"
+                                style=" color: black;  display: none;" role="alert"></div>
+                            <div id="mostrarCoeficienteEdad" class="alert alert-dark h3 mt-3"
+                                style=" color: black; display: none;" role="alert"></div>
+                            <div id="mostrarIBM" class="alert alert-dark h3 mt-3" style="color: black; display: none;"
+                                role="alert"></div>
+                            <div id="mostrarFormula" class="alert alert-info h3 mt-3"
+                                style="color: black; display: none;" role="alert"></div>
+                            <div id="mostrarArticulotres" class="alert alert-info h3 mt-3"
+                                style=" color: black; display: none;" role="alert"></div>
+                            <div id="mostrarTotal" class="alert alert-success h3 mt-3"
+                                style="color: black; display: none;" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex col-6">
+                    <div class="card text-dark bg-light mb-3 w-100 mostrarTodo_2" style="display: none;" >
+                        <div class="card-header"> Párrafo para sentencia : 
+                            <button class="btn btn-success" id="copiarTexto" data-clipboard-target="#mostrarSentencia">Copiar texto</button>
+                        </div>
+                        <div class="card-body border-bottom">
+                            <div id="mostrarSentencia" class="bg-white p-3" style="width: 99%; border-radius: 5px; border: lightgrey solid 1px;
+                            font-size: 14px; font-family: Calibri;" contenteditable="true">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="d-flex mostrarTodo_3" id="a2">
+                <div class="card text-dark bg-light mb-3 w-100 mostrarTodo_3" id="calcularAcuerdosUno"
+                    style="display:none; ">
+                    <div class="card-header"> Datos del acuerdo : </div>
+                    <div class="card-body d-block col-12">
+                        <div class="m-4 ">
+                            Capital: <input class="float-right" type="text" id="capital"> <br>
+                        </div>
+                        <div class="m-4 ">
+                            Monto del acuerdo: <input class="float-right" type="text" id="montoAcuerdo"> <br>
+                        </div>
+                        <div class="m-4">
+                            Fecha de notificación de la demanda: <input class="float-right w-25" type="date" name=""
+                                id=""><br>
+                        </div>
+                        <div class="m-4">
+                            Intereses hasta la notificación de la demanda (770 CCN): <input class="float-right"
+                                type="text">
+                        </div>
+                        <div class="m-4">
+                            Nuevo capital: <input class="float-right" type="text" id="nuevoCapital">
+                        </div>
+                        <div class="m-4">
+                            Intereses hasta el <span id="hastaHoy"></span> : <input class="float-right" type="text">
+                        </div>
+                        <div class="m-4">
+                            Total de capital más intereses: <input class="float-right" type="text" id="totalCapital">
+                        </div>
+                        <div class="m-4"><button class="btn btn-success float-right" id="acuerdoListo">Listo</button>
+                        </div>
+                        <div class="divisor"></div>
+                        <div class="container" style="font-size: 55px; letter-spacing: 2px;">
+                            <div class="d-block d-flex m-4 justify-content-between align-items-center">De Cillis :<i
+                                    class="fas fa-check-circle deCillis" style="color: green; display: none; "></i><i
+                                    class="fas fa-times-circle deCillisNo" style="color: red; display: none; "></i>
+                            </div>
+                            <div class="d-block d-flex m-4 justify-content-between align-items-center">Romualdi :<i
+                                    class="fas fa-check-circle romualdi" style="color: green; display: none; "></i><i
+                                    class="fas fa-times-circle romualdiNo" style="color: red; display: none; "></i>
+                            </div>
+                            <div class="d-block d-flex m-4 justify-content-between align-items-center">Dos Santos
+                                :<i class="fas fa-check-circle dosSantos" style="color: green; display: none; "></i><i
+                                    class="fas fa-times-circle dosSantosNo" style="color: red; display: none; "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- modal para calcuar IBM sin RIPTE -->
+    <div class="modal fade" id="modal24557" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal24557">CALCULO IBM SIN RIPTE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-lg" id="modal24557">
+                    <table class="table table-sm table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mes y Año : </th>
+                                <th>Remuneración :</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <th scope="row">1</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">2</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">3</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">4</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">5</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">6 </th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">7</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">8</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">9</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">10</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">11</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">12</th>
+                                <td class="month_24557"></td>
+                                <td><input type="text" tabindex="1" class="remun24557" value="0"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr11">
+                                <th></th>
+                                <td colspan="3" id="suma_24557"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr12">
+                                <th></th>
+                                <td colspan="3" id="divisor_24557"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr13">
+                                <th></th>
+                                <td colspan="3" id="resultado_24557"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btnCalcular_24557">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal para calcuar IBM con RIPTE -->
+    <div class="modal fade" id="modal27348" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" id="modal_27348">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal27348">CALCULO IBM CON RIPTE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="w-100 text-success text-center h5 col-12 mt-2" id="mostrarIndiceMA"> </div>
+                <div class="modal-body modal-lg text-center pt-0">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mes y Año: </th>
+                                <th>Indice del mes:</th>
+                                <th>Remuneración:</th>
+                                <th>Factor de correción mensual:</th>
+                                <th>Salario actualizado :</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <th scope="row">1</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">2</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">3</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">4</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">5</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">6</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">7</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">8</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">9</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">10</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">11</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">12</th>
+                                <td class="month_27348"></td>
+                                <td class="indice_27348"></td>
+                                <td><input type="text" class="rem" tabindex="1" value="0"></td>
+                                <td class="factor"></td>
+                                <td class="resultado"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr1">
+                                <th></th>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3" id="suma"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none; " id="tr2">
+                                <th></th>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3" id="divisor"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none; " id="tr3">
+                                <th></th>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3" id="resultado_27348"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btnCalcular">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal para calcuar IBM sin RIPTE  QUINCENAL-->
+    <div class="modal fade" id="modal24557_quincenal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CALCULO IBM SIN RIPTE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-lg">
+                    <table class="table table-sm table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mes y Año : </th>
+                                <th>Primer quincena:</th>
+                                <th>Segunda quincena:</th>
+                                <th>Remuneración :</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <th scope="row">1</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">2</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">3</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">4</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">5</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">6 </th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">7</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">8</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">9</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">10</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">11</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">12</th>
+                                <td class="month_24557_quincena"></td>
+                                <td><input type="text" tabindex="1" class="quinena_uno_24557" value="0"></td>
+                                <td><input type="text" tabindex="1" class="quincena_dos_24557" value="0"></td>
+                                <td class="sumatoria_24557"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr11">
+                                <th></th>
+                                <td colspan="3" id="suma_24557_quincena"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr12">
+                                <th></th>
+                                <td colspan="3" id="divisor_24557_quincena"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr13">
+                                <th></th>
+                                <td colspan="3" id="resultado_24557_quincena"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btnCalcular_24557_quincena">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal para calcuar IBM con RIPTE QUINCENAL -->
+    <div class="modal fade" id="modal27348_quincenal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" id="modal27348_quincenal">
+            <div class="modal-content modal-xl">
+                <div class="modal-header">
+                    <h5 class="modal-title">CALCULO IBM CON RIPTE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="w-100 text-success text-center h5 col-12 mt-2" id="mostrarIndiceMA_quincenal"> </div>
+                <div class="modal-body text-center pt-0" id="modal27348_quincenal">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mes y Año: </th>
+                                <th>Indice del mes:</th>
+                                <th>Quincena 1:</th>
+                                <th>Quincena 2:</th>
+                                <th>Salario mensual:</th>
+                                <th>Factor de correción mensual:</th>
+                                <th>Salario actualizado :</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <th scope="row">1</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">2</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">3</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">4</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">5</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">6</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">7</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">8</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">9</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">10</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">11</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th scope="row">12</th>
+                                <td class="month_27348_quincenal"></td>
+                                <td class="indice_27348_quincenal"></td>
+                                <td><input type="text" class="quincena_uno" tabindex="1" value="0"></td>
+                                <td><input type="text" class="quincena_dos" tabindex="1" value="0"></td>
+                                <td class="sumatoria"></td>
+                                <td class="factor_quincenal"></td>
+                                <td class="resultado_quincenal"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none;" id="tr21">
+                                <th></th>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3" id="suma_quincenal"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none; " id="tr22">
+                                <th></th>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3" id="divisor_quincenal"></td>
+                            </tr>
+                            <tr class="text-success text-right" style="font-weight: bold; display: none; " id="tr23">
+                                <th></th>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3" id="resultado_27348_quincenal"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="btnCalcular_quincena">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- Popper.JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+	-->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script> -->
+
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+
+    <!-- JS propio -->
+    <script src="../JS/liq_art_sentencia_2.js"></script>
+    <script src="../JS/clipboard.min.js"></script>
+    <script src="../JS/ley24557.js"></script>
+    <script src="../JS/ley27348.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+
+        });
+    </script>
+</body>
+
+</html>
