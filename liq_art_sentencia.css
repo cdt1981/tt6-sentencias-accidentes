@@ -1,0 +1,232 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+
+}
+
+*, html, body{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+
+}
+
+p{
+    font-size: 14px;
+    color: black;
+}
+
+
+input[type="radio"],
+input[type="checkbox"]{
+
+    margin-right: 10px;
+}
+
+input[type="date"]{
+    text-align: center;
+}
+
+input[type="text"]{
+
+    max-width: 100px;
+    text-align: center;
+}
+
+
+.weekend{
+    color: red;
+    background-color: #ffefef;
+}
+
+.unselected:hover{
+
+    cursor: not-allowed;
+    background-color:  #ffefef !important;
+    pointer-events: none;
+
+}
+
+.fechaDia:hover{
+
+    background-color: lightblue;
+    border: #17a2b8 1px solid;
+    
+}
+
+td{
+
+    text-align: center;
+}
+
+#anterior,
+#posterior{
+
+    background-color: #f8f9fa;
+
+}
+#mesyanno{
+    font-size: 25px;
+    
+}
+
+#fechaSeleccionada{
+    font-weight: bold;
+    
+}
+
+#fechaSeleccionada::after{
+    content: "1 de abril de 2021";
+    color: #2fbb24;
+    font-weight: bold;
+}
+
+#vencimientoTresDias::after,
+#vencimientoCincoDias::after,
+#vencimientoDiezDias::after{
+
+    content: "12 de abril de 2021, 12:00 hs";
+    color: #ec3c1a;
+    font-weight: bold;
+}
+
+#vencimientoTresDias::before,
+#vencimientoCincoDias::before,
+#vencimientoDiezDias::before{
+
+    content: ">";
+    font-size: 25px;
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.w-50{
+    width: 47% !important;
+}
+
+#toDo>tbody>tr>td:nth-child(2){
+    text-align: left;
+    color: red;
+}
+
+#toDo>thead{
+    border-bottom: 1px solid grey;
+}
+
+.hecho {
+    color: green;
+    font-size: 1.5rem;
+}
+
+.eliminar{
+    color: red;
+    font-size: 1.5rem;
+}
+
+.prioridad{
+    color: #6c86ff;
+    font-size: 1.5rem;
+}
+
+button{
+    border: none;
+    background-color: #f8f9fa;
+    
+}
+
+
+
+#calculator:invalid{
+
+    border-color: red;
+}
+
+.calcBtn{
+    background-color: #ebecef;
+    color: black;
+    margin: 3px;
+    
+}
+
+.calcBtn:hover{
+    border-color: black;
+}
+.calcBtn:active{
+    border-color: black;
+}
+
+.calcNumber{
+    border: 1px solid lightgrey;
+    outline: none;
+    
+}
+
+.calcNumber:hover{
+    border-color: rgb(29, 147, 243);
+    background-color: lightskyblue;
+}
+.calcNumber:active{
+    border-color: rgb(138, 248, 35);
+    background-color: lightgreen;
+}
+
+#calcTable>tbody>tr>td{
+    padding: 0;
+    border: none;
+}
+
+#calcTable>tbody>tr>td>button{
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 55px;
+    border-radius: 7px;
+    margin: 3px;
+}
+
+
+#jumboton, #jumboton_acuerdos{
+
+    width: 98.5% !important;
+    height: 4rem;
+    font-size: 25px;
+    font-weight: bold;
+       
+}
+
+.divisor{
+
+    clear: both;
+}
+
+/* **************
+ESTILOS VENTANA MODLAL
+*************** */
+
+.remun24557{
+
+    text-align: end;
+}
+
+
+.modal-xl{
+
+    width: 75vw;
+    right: 20%;
+}
+
+table>tbody>tr>td>input{
+    text-align: center;
+}
+
+.titulo{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.negrita{
+    font-weight: bold;
+}
